@@ -1,0 +1,28 @@
+
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #e5e5e5;
+    border-top: .01rem solid #d5d5d5;
+
+    @include flexbox();
+    a{
+        display: block;
+        width: 20%;
+        height: .46rem;
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content(space-around);
+        text-align: center;
+        color: #888;
+        i{
+            font-size: 24px;
+        }
+        span{
+            font-size: 12px;
+            margin-top:- .08rem;
+        }
+    }
+   
+}
